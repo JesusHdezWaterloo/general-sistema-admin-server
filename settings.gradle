@@ -1,0 +1,31 @@
+rootProject.name = 'general-sistema-admin-server'
+
+include ':clean-core-full'
+project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
+
+include ':utils-core'
+project(':utils-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-core" as File
+
+include ':utils-spring'
+project(':utils-spring').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-spring" as File
+
+include ':module-util-mysql'
+project(':module-util-mysql').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-mysql" as File
+
+include ':module-gestion-contabilidad_empresarial-server'
+project(':module-gestion-contabilidad_empresarial-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-server" as File
+
+include ':module-gestion-contabilidad_empresarial-standard'
+project(':module-gestion-contabilidad_empresarial-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-contabilidad_empresarial-standard" as File
+
+include ':module-gestion-gastos_administrativos-server'
+project(':module-gestion-gastos_administrativos-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-gastos_administrativos-server" as File
+
+include ':module-gestion-gastos_administrativos-standard'
+project(':module-gestion-gastos_administrativos-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-gastos_administrativos-standard" as File
+
+include ':module-admin-kanban-server'
+project(':module-admin-kanban-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-server" as File
+
+include ':module-admin-kanban-standard'
+project(':module-admin-kanban-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-admin-kanban-standard" as File

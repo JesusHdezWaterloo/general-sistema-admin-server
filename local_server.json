@@ -1,0 +1,5 @@
+{
+  "startRestService" : true,
+  "executable" : "server.war",
+  "port" : 8080
+}

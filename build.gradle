@@ -1,0 +1,45 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'war'
+    //id 'application'
+}
+
+group = 'com.jhw.sistema.admin'
+
+version = '1.0.0.SNAPSHOT.20201114'
+
+bootWar{
+    archiveFileName = "server.war"
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+        
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    
+    implementation project(':utils-core')
+    implementation project(':module-util-mysql')
+    
+    implementation project(':module-gestion-contabilidad_empresarial-server')
+    implementation project(':module-gestion-gastos_administrativos-server')
+    implementation project(':module-admin-kanban-server')
+}
+
+task deploy(type: Copy){
+    def deployFolder = "E:/Trabajos/Projects/GIT Projects Gradle/general-sistema-admin/!App"
+    def buildFolder = "${projectDir}/build/libs/server.war"//carpeta del build
+    doFirst{
+        delete deployFolder + "/server.war"
+    }
+    from buildFolder
+    into deployFolder
+}
+
+build.finalizedBy(deploy)
