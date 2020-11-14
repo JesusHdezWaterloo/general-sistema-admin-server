@@ -10,7 +10,7 @@ group = 'com.example'
 //mainClassName = 'com.jhw.sistema.server.testing_spring.Application'
 
 bootWar{
-    archiveFileName = "test_spring.war"
+    archiveFileName = "server.war"
 }
 
 repositories {

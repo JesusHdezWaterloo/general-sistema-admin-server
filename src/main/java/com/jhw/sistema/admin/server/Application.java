@@ -1,4 +1,4 @@
-package com.jhw.sistema.server.testing_spring;
+package com.jhw.sistema.admin.server;
 
 import com.jhw.module.admin.kanban.rest.A_ModuleAdminKanban;
 import com.jhw.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
