@@ -6,8 +6,9 @@ plugins {
     //id 'application'
 }
 
-group = 'com.example'
-//mainClassName = 'com.jhw.sistema.server.testing_spring.Application'
+group = 'com.jhw.sistema.admin'
+
+version = '1.0.0.SNAPSHOT.20201114'
 
 bootWar{
     archiveFileName = "server.war"
@@ -30,3 +31,15 @@ dependencies {
     implementation project(':module-gestion-gastos_administrativos-server')
     implementation project(':module-admin-kanban-server')
 }
+
+task deploy(type: Copy){
+    def deployFolder = "E:/Trabajos/Projects/GIT Projects Gradle/general-sistema-admin/!App"
+    def buildFolder = "${projectDir}/build/libs/server.war"//carpeta del build
+    doFirst{
+        delete deployFolder + "/server.war"
+    }
+    from buildFolder
+    into deployFolder
+}
+
+build.finalizedBy(deploy)
