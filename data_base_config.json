@@ -1,0 +1,10 @@
+{
+  "startMysqlService" : true,
+  "batchFolder" : "D:\\xampp",
+  "saveDbAfterClose" : true,
+  "dbSaveFolder" : "salvas_bd",
+  "user" : "root",
+  "pass" : "",
+  "port" : "7730",
+  "ip" : "localhost"
+}

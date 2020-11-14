@@ -1,0 +1,32 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'war'
+    //id 'application'
+}
+
+group = 'com.example'
+//mainClassName = 'com.jhw.sistema.server.testing_spring.Application'
+
+bootWar{
+    archiveFileName = "test_spring.war"
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+        
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    
+    implementation project(':utils-core')
+    implementation project(':module-util-mysql')
+    
+    implementation project(':module-gestion-contabilidad_empresarial-server')
+    implementation project(':module-gestion-gastos_administrativos-server')
+    implementation project(':module-admin-kanban-server')
+}
