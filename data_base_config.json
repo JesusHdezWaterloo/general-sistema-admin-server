@@ -1,10 +1,12 @@
 {
   "startMysqlService" : true,
-  "batchFolder" : "D:\\xampp",
+  "batDumpFolder" : "D:\\xampp\\mysql\\bin\\mysqldump",
+  "batStart" : "D:\\xampp\\mysql_start.bat",
+  "batStop" : "D:\\xampp\\mysql_stop.bat",
   "saveDbAfterClose" : true,
   "dbSaveFolder" : "salvas_bd",
   "user" : "root",
   "pass" : "",
-  "port" : "7730",
+  "port" : 7730,
   "ip" : "localhost"
 }
