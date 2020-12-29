@@ -38,3 +38,10 @@ project(':module-admin-seguridad-server').projectDir = "E:\\Trabajos\\Projects\\
 
 include ':module-authorization_server-oauth2'
 project(':module-authorization_server-oauth2').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-authorization_server-oauth2" as File
+
+
+include ':module-util-licence-server'
+project(':module-util-licence-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-licence-server" as File
+
+include ':module-util-licence-standard'
+project(':module-util-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-licence-standard" as File

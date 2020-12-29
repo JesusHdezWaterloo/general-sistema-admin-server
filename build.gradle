@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.jhw.sistema.admin'
 
-version = '2.1.0.SNAPSHOT.20201219'
+version = '2.2.0.SNAPSHOT.20201228'
 
 bootWar{
     archiveFileName = "server.war"
@@ -50,6 +50,8 @@ dependencies {
     
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
+    
+    implementation project(':module-util-licence-server')
 }
 
 task deploy(type: Copy){
