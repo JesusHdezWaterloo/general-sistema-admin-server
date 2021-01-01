@@ -51,7 +51,7 @@ dependencies {
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
     
-    implementation project(':module-util-licence-server')
+    implementation project(':module-control-licence-server')
 }
 
 task deploy(type: Copy){
