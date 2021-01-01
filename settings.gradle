@@ -1,7 +1,7 @@
 rootProject.name = 'general-sistema-admin-server'
 
-include ':clean-core-full'
-project(':clean-core-full').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core-full" as File
+include ':clean-core'
+project(':clean-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\clean-core" as File
 
 include ':utils-core'
 project(':utils-core').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\utils-core" as File
@@ -40,8 +40,8 @@ include ':module-authorization_server-oauth2'
 project(':module-authorization_server-oauth2').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-authorization_server-oauth2" as File
 
 
-include ':module-util-licence-server'
-project(':module-util-licence-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-licence-server" as File
+include ':module-control-licence-server'
+project(':module-control-licence-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-control-licence-server" as File
 
-include ':module-util-licence-standard'
-project(':module-util-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-util-licence-standard" as File
+include ':module-control-licence-standard'
+project(':module-control-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-control-licence-standard" as File

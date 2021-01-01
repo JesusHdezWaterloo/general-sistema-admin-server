@@ -1,16 +1,16 @@
-package com.jhw.sistema.admin.server;
+package com.root101.sistema.admin.server;
 
-import com.jhw.module.admin.kanban.rest.A_ModuleAdminKanban;
-import com.jhw.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
-import com.jhw.module.admin.kanban.repo.utils.ResourcesKanban;
-import com.jhw.module.admin.seguridad.repo.utils.ResourcesSeguridad;
-import com.jhw.module.admin.seguridad.rest.A_ModuleAdminSeguridad;
+import com.root101.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
 import com.jhw.module.authorization_server.oauth2.A_ModuleOAuth2;
-import com.jhw.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
-import com.jhw.module.gestion.gastos.repo.utils.ResourcesGastos;
-import com.jhw.module.gestion.gastos.rest.A_ModuleGestionGastos;
-import com.jhw.module.util.licence.rest.A_ModuleUtilLicence;
+import com.root101.module.gestion.contabilidad.rest.A_ModuleGestionContabilidadEmpresarial;
+import com.root101.module.control.licence.rest.A_ModuleUtilLicence;
 import com.jhw.module.util.mysql.services.MySQLHandler;
+import com.root101.module.admin.kanban.repo.utils.ResourcesKanban;
+import com.root101.module.admin.kanban.rest.A_ModuleAdminKanban;
+import com.root101.module.admin.seguridad.repo.utils.ResourcesSeguridad;
+import com.root101.module.admin.seguridad.rest.A_ModuleAdminSeguridad;
+import com.root101.module.gestion.gastos.repo.utils.ResourcesGastos;
+import com.root101.module.gestion.gastos.rest.A_ModuleGestionGastos;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import org.springframework.boot.SpringApplication;
