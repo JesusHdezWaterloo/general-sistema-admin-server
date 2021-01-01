@@ -1,4 +1,4 @@
-package com.jhw.sistema.admin.server;
+package com.root101.sistema.admin.server;
 
 import com.root101.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
 import com.jhw.module.authorization_server.oauth2.A_ModuleOAuth2;
