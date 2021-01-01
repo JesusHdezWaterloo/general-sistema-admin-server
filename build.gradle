@@ -5,9 +5,9 @@ plugins {
     id 'war'
 }
 
-group = 'com.jhw.sistema.admin'
+group = 'com.root101.sistema.admin'
 
-version = '2.2.0.SNAPSHOT.20201228'
+version = '2.9.9.SNAPSHOT.20210101'
 
 bootWar{
     archiveFileName = "server.war"
