@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.root101.sistema'
 
-version = '3.0.0.SNAPSHOT.20210109'
+version = '3.1.0.SNAPSHOT.20210117'
 
 bootWar{
     archiveFileName = "server.war"
