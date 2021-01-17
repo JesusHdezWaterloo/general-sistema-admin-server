@@ -36,7 +36,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
-
+import com.root101.module.gestion.moneda.repo.utils.ResourcesMoneda;
+import com.root101.module.gestion.moneda.rest.A_ModuleGestionMonedaRESTConfig;
 /**
  *
  * @author Root101 (jhernandezb96@gmail.com, +53-5-426-8660)
@@ -44,6 +45,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {
+    A_ModuleGestionMonedaRESTConfig.BASE_PACKAGE,
     A_ModuleGestionContabilidadRESTConfig.BASE_PACKAGE,
     A_ModuleGestionGastosRESTConfig.BASE_PACKAGE,
     A_ModuleAdminKanbanRESTConfig.BASE_PACKAGE,
@@ -62,6 +64,7 @@ public class Application extends SpringBootServletInitializer {
         MySQLHandler.save(ResourcesGastos.SCHEMA);
         MySQLHandler.save(ResourcesKanban.SCHEMA);
         MySQLHandler.save(ResourcesSeguridad.SCHEMA);
+        MySQLHandler.save(ResourcesMoneda.SCHEMA);
     }
 
     private static ConfigurableApplicationContext context;

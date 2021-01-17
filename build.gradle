@@ -47,7 +47,8 @@ dependencies {
     implementation project(':module-gestion-contabilidad_empresarial-server')
     implementation project(':module-gestion-gastos_administrativos-server')
     implementation project(':module-admin-kanban-server')
-    
+    implementation project(':module-gestion-moneda-server')
+
     implementation project(':module-admin-seguridad-server')
     implementation project(':module-authorization_server-oauth2')
     

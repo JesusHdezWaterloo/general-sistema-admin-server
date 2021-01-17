@@ -45,3 +45,10 @@ project(':module-control-licence-server').projectDir = "E:\\Trabajos\\Projects\\
 
 include ':module-control-licence-standard'
 project(':module-control-licence-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-control-licence-standard" as File
+
+
+include ':module-gestion-moneda-server'
+project(':module-gestion-moneda-server').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-moneda-server" as File
+
+include ':module-gestion-moneda-standard'
+project(':module-gestion-moneda-standard').projectDir = "E:\\Trabajos\\Projects\\GIT Projects Gradle\\module-gestion-moneda-standard" as File
