@@ -16,6 +16,7 @@
  */
 package com.root101.sistema.admin.server;
 
+import com.root101.json.ConverterServiceJSONImpl;
 import com.root101.module.gestion.contabilidad.repo.utils.ResourcesContabilidad;
 import com.root101.module.authorization_server.oauth2.A_ModuleOAuth2;
 import com.root101.module.control.licence.rest.A_ModuleUtilLicenceRESTConfig;
@@ -70,6 +71,7 @@ public class Application extends SpringBootServletInitializer {
     private static ConfigurableApplicationContext context;
 
     public static void main(String[] args) {
+        ConverterServiceJSONImpl.INSTANCE();
         context = SpringApplication.run(Application.class, args);
     }
 
